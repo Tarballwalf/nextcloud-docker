@@ -22,7 +22,7 @@ services:
     restart: unless-stopped
 
   letsencrypt:
-    image: jrcs/letsencrypt-nginx-proxy-companion
+    image: jrcs/letsencrypt-nginx-proxy-companion:v1.13.1
     container_name: nextcloud-letsencrypt
     depends_on:
       - proxy
